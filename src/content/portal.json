@@ -1,0 +1,157 @@
+{
+  "company": {
+    "name": "Lara",
+    "tagline": "Nosso ponto de encontro",
+    "footer": "Feito para aproximar a nossa gente.",
+    "demo": true
+  },
+  "hero": {
+    "eyebrow": "JUNTOS, A GENTE VAI MAIS LONGE",
+    "title": "Conexões que fazem\na diferença.",
+    "description": "Um espaço para compartilhar novidades, celebrar conquistas e ficar perto de tudo o que acontece por aqui.",
+    "postId": "cultura-conexao"
+  },
+  "posts": [
+    {
+      "id": "outubro-rosa",
+      "category": "Campanhas",
+      "title": "Outubro Rosa: o cuidado começa com você",
+      "excerpt": "Neste mês, vamos juntos espalhar informação, acolhimento e cuidado. Conheça a nossa programação.",
+      "body": [
+        "Cuidar de quem faz parte da nossa história também é o nosso compromisso. Durante outubro, nosso portal vai abrir espaço para conversas sobre cuidado e bem-estar.",
+        "A programação de exemplo inclui uma roda de conversa em 8 de outubro e um encontro da equipe em 23 de outubro. Confira os detalhes na agenda do portal.",
+        "Vista uma peça rosa no encontro e ajude a tornar esse momento ainda mais especial. Esta é uma campanha demonstrativa: substitua os textos e datas pela programação da sua empresa."
+      ],
+      "date": "2026-09-30",
+      "author": "Gente & Cultura",
+      "initials": "GC",
+      "readTime": "2 min",
+      "image": "/images/campanha-rosa.svg",
+      "imageAlt": "Ilustração de laço rosa com a mensagem Cuidar é um ato de amor",
+      "pinned": true
+    },
+    {
+      "id": "encontro-equipe",
+      "category": "Novidades",
+      "title": "Boas ideias nascem quando a gente se encontra",
+      "excerpt": "Uma pausa na rotina, muitas trocas e um time cheio de ideias. Veja o que vem no nosso próximo encontro.",
+      "body": [
+        "Tem novidade boa chegando! Nosso próximo encontro será um espaço para compartilhar aprendizados, ouvir novas perspectivas e construir os próximos passos em equipe.",
+        "Traga uma ideia, uma pergunta ou uma experiência que possa inspirar outras pessoas. Todo mundo tem algo para somar.",
+        "Consulte o evento Conexão Lara na agenda. Conteúdo de demonstração; ajuste o local e o horário antes de divulgar."
+      ],
+      "date": "2026-09-29",
+      "author": "Comunicação",
+      "initials": "CO",
+      "readTime": "3 min",
+      "image": "/images/equipe.svg",
+      "imageAlt": "Ilustração de uma equipe reunida à mesa para compartilhar ideias",
+      "pinned": false
+    },
+    {
+      "id": "feriado-outubro",
+      "category": "Avisos",
+      "title": "Feriado de outubro: programe-se por aqui",
+      "excerpt": "Confira a orientação para o dia 12 de outubro e organize suas atividades com antecedência.",
+      "body": [
+        "No dia 12 de outubro, teremos o feriado de Nossa Senhora Aparecida. Combine previamente com sua liderança a organização das entregas e os atendimentos da equipe.",
+        "As escalas e os horários devem ser confirmados por cada área. Este aviso é um exemplo e precisa ser adaptado à operação da empresa."
+      ],
+      "date": "2026-09-28",
+      "author": "Gente & Cultura",
+      "initials": "GC",
+      "readTime": "1 min",
+      "pinned": true
+    },
+    {
+      "id": "cultura-conexao",
+      "category": "Nossa cultura",
+      "title": "Um novo espaço. A mesma vontade de estar perto.",
+      "excerpt": "O Portal Lara chegou para conectar pessoas, histórias e tudo o que faz parte do nosso dia a dia.",
+      "body": [
+        "Boas-vindas ao nosso ponto de encontro! Aqui você acompanha avisos importantes, descobre as próximas campanhas e encontra as datas que não podem ficar de fora da sua agenda.",
+        "Explore as categorias, salve publicações para ler depois e volte sempre para conferir as novidades. Os itens salvos ficam apenas no seu navegador.",
+        "Este portal foi pensado para crescer com a nossa história. Os conteúdos iniciais são exemplos para inspirar as primeiras publicações da sua empresa."
+      ],
+      "date": "2026-09-25",
+      "author": "Comunicação",
+      "initials": "CO",
+      "readTime": "2 min",
+      "pinned": false
+    }
+  ],
+  "events": [
+    {
+      "id": "cafe-setembro",
+      "title": "Café com a liderança",
+      "date": "2026-09-30",
+      "time": "15:00",
+      "endTime": "16:00",
+      "location": "Espaço de convivência",
+      "category": "Encontro",
+      "description": "Uma conversa aberta sobre as novidades e os próximos passos da equipe. Evento de exemplo."
+    },
+    {
+      "id": "roda-outubro",
+      "title": "Roda de conversa · Outubro Rosa",
+      "date": "2026-10-08",
+      "time": "14:00",
+      "endTime": "15:00",
+      "location": "Sala de encontros",
+      "category": "Campanha",
+      "description": "Um momento de troca, acolhimento e cuidado entre colegas. Evento de exemplo."
+    },
+    {
+      "id": "feriado-12",
+      "title": "Nossa Senhora Aparecida",
+      "date": "2026-10-12",
+      "time": "",
+      "location": "Feriado nacional",
+      "category": "Feriado",
+      "description": "Confira com a sua liderança a escala de funcionamento."
+    },
+    {
+      "id": "conexao-lara",
+      "title": "Conexão Lara",
+      "date": "2026-10-23",
+      "time": "09:00",
+      "endTime": "10:30",
+      "location": "Espaço de convivência",
+      "category": "Encontro",
+      "description": "Nosso encontro para compartilhar ideias e celebrar conquistas. Evento de exemplo."
+    }
+  ],
+  "resources": [
+    {
+      "id": "guia",
+      "title": "Guia de boas-vindas",
+      "description": "Para começar com o pé direito",
+      "icon": "book",
+      "body": [
+        "Que bom ter você por aqui! Este é um espaço de exemplo para o guia de boas-vindas da empresa.",
+        "Inclua aqui a apresentação das áreas, os canais de contato e as informações úteis para os primeiros dias. Você também pode substituir este conteúdo por um link para um PDF, usando o campo url no arquivo de conteúdo."
+      ]
+    },
+    {
+      "id": "materiais",
+      "title": "Materiais e documentos",
+      "description": "Tudo à mão, em um só lugar",
+      "icon": "folder",
+      "body": [
+        "Reúna os materiais que a equipe consulta no dia a dia.",
+        "Para disponibilizar um documento, coloque o PDF na pasta public/documentos e cadastre seu caminho no campo url de um recurso. Exemplo: /documentos/manual.pdf."
+      ]
+    },
+    {
+      "id": "sobre",
+      "title": "Conheça o nosso portal",
+      "description": "Um espaço feito para você",
+      "icon": "heart",
+      "body": [
+        "O Portal Lara reúne comunicados, campanhas, histórias e eventos em um único lugar.",
+        "Use a busca para encontrar uma publicação ou navegue pelas categorias. O ícone de marcador guarda uma publicação nos seus salvos, somente neste navegador.",
+        "As publicações e os eventos desta primeira versão são demonstrativos."
+      ]
+    }
+  ]
+}
