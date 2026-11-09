@@ -60,6 +60,8 @@ for (const key of ["posts", "events", "resources"]) {
         requireText(item, "imageAlt", label);
         asset(item.image, label);
       }
+      if (item.instagram && !/^https:\/\//.test(item.instagram))
+        errors.push(`${label}: instagram deve ser uma URL HTTPS.`);
     }
     if (key === "events") {
       for (const field of ["description", "location", "category"])
@@ -87,6 +89,19 @@ for (const key of ["posts", "events", "resources"]) {
     }
   }
 }
+for (const [i, item] of (content.gallery || []).entries()) {
+  const label = `gallery/${i + 1}`;
+  requireText(item, "alt", label);
+  if (typeof item.image !== "string") errors.push(`${label}: image obrigatório.`);
+  else asset(item.image, label);
+  if (!/^https:\/\//.test(item.url || ""))
+    errors.push(`${label}: url deve começar com https://.`);
+}
+if (!Array.isArray(content.cities)) errors.push("cities precisa ser uma lista.");
+if (!Array.isArray(content.stats)) errors.push("stats precisa ser uma lista.");
+for (const key of ["instagram", "careers"])
+  if (!/^https:\/\//.test(content.company?.[key] || ""))
+    errors.push(`company: ${key} deve ser uma URL HTTPS.`);
 for (const key of ["name", "tagline", "footer"])
   requireText(content.company || {}, key, "company");
 for (const key of ["eyebrow", "title", "description", "postId"])

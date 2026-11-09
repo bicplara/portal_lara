@@ -6,6 +6,8 @@ import {
   Bell,
   BookOpen,
   Bookmark,
+  Briefcase,
+  Camera,
   CalendarDays,
   Check,
   ChevronLeft,
@@ -16,6 +18,7 @@ import {
   Heart,
   Home,
   Megaphone,
+  MapPin,
   Menu,
   Pin,
   Search,
@@ -54,69 +57,31 @@ const events = [...content.events].sort((a, b) =>
   `${a.date}${a.time}`.localeCompare(`${b.date}${b.time}`),
 );
 
-function HeroArt() {
+function HeroPhotos() {
   return (
-    <svg
-      className="hero-art"
-      viewBox="0 0 420 300"
-      fill="none"
-      aria-hidden="true"
-    >
-      <circle cx="257" cy="159" r="112" fill="#DED5ED" />
-      <circle cx="335" cy="63" r="21" fill="#D9EAAF" />
-      <path
-        d="M96 215c-36-48-14-109 24-123M351 224c39-34 42-77 27-104"
-        stroke="#B3A0CF"
-        strokeWidth="2"
-        strokeDasharray="5 7"
+    <div className="hero-photos" aria-hidden="true">
+      <img
+        className="hero-photo hero-photo-main"
+        src="/images/instagram/natal-ilheus.jpg"
+        alt=""
       />
-      <g transform="rotate(-10 225 151)">
-        <rect x="133" y="53" width="184" height="211" rx="14" fill="#B5A1CC" />
-        <rect x="127" y="46" width="184" height="211" rx="14" fill="#FFFEF7" />
-        <rect x="148" y="72" width="140" height="92" rx="7" fill="#E9E2F1" />
-        <circle cx="192" cy="108" r="17" fill="#D8A584" />
-        <path d="M166 161c0-44 49-48 52 0" fill="#8672A6" />
-        <circle cx="247" cy="105" r="18" fill="#AD755E" />
-        <path d="M218 161c1-44 56-48 58 0" fill="#9CAB75" />
-        <path
-          d="M175 102c-1-27 37-25 34 4l-13-12-21 8M229 101c-4-26 36-28 36 2l-21-10-15 8"
-          fill="#55413E"
-        />
-        <rect x="148" y="184" width="114" height="7" rx="3.5" fill="#D5CDDF" />
-        <rect x="148" y="201" width="81" height="7" rx="3.5" fill="#E6E0EC" />
-        <path d="m150 231 7-7 7 7-7 7z" fill="#BDAACC" />
-        <path
-          d="M177 229h55"
-          stroke="#DBD4E4"
-          strokeWidth="5"
-          strokeLinecap="round"
-        />
-      </g>
-      <g transform="rotate(9 315 170)">
-        <rect x="281" y="143" width="87" height="64" rx="13" fill="#82709E" />
-        <path d="m297 206 3 17 18-17" fill="#82709E" />
-        <path
-          d="M316 164c-11-13-26 5 9 24 36-22 14-38 4-23l-4 5-9-6"
-          fill="#F2D5D4"
-        />
-      </g>
-      <g transform="rotate(-13 111 192)">
-        <rect x="69" y="167" width="80" height="50" rx="12" fill="#DAE8B4" />
-        <path
-          d="m94 190 11 10 21-21"
-          stroke="#6E8252"
-          strokeWidth="5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </g>
-      <path
-        d="m123 54 4 12 12 4-12 4-4 12-4-12-12-4 12-4zM346 248l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"
-        fill="#9582B1"
+      <img
+        className="hero-photo hero-photo-side"
+        src="/images/instagram/corrida-botisun.jpg"
+        alt=""
       />
-    </svg>
+      <img className="hero-seal" src="/brand/gptw-selo.png" alt="" />
+    </div>
   );
 }
+
+const resourceIcons = {
+  book: BookOpen,
+  folder: FolderOpen,
+  heart: Heart,
+  briefcase: Briefcase,
+  instagram: Camera,
+};
 
 function Calendar({ month, setMonth, selected, onSelect }) {
   const year = month.getFullYear(),
@@ -216,7 +181,7 @@ function PostCard({ post, saved, onSave, onOpen }) {
         </button>
         <p>{post.excerpt}</p>
         <div className="post-footer">
-          <span className={`avatar ${post.initials === "CO" ? "sage" : ""}`}>
+          <span className={`avatar avatar-${post.initials.toLowerCase()}`}>
             {post.initials}
           </span>
           <div>
@@ -347,7 +312,9 @@ function DetailDialog({ item, onClose, saved, onSave }) {
           <X size={22} />
         </button>
         {item.image && (
-          <img className="dialog-image" src={item.image} alt={item.imageAlt} />
+          <div className="dialog-media">
+            <img className="dialog-image" src={item.image} alt={item.imageAlt} />
+          </div>
         )}
         <div className="dialog-body">
           <span className="eyebrow">{item.category || "POR AQUI"}</span>
@@ -382,6 +349,7 @@ function DetailDialog({ item, onClose, saved, onSave }) {
               </button>
             </>
           ) : item.author ? (
+            <div className="dialog-actions">
             <button
               className="secondary-button"
               onClick={() => onSave(item.id)}
@@ -394,6 +362,17 @@ function DetailDialog({ item, onClose, saved, onSave }) {
                 ? "Salvo neste navegador"
                 : "Salvar para ler depois"}
             </button>
+            {item.instagram && (
+              <a
+                className="secondary-button"
+                href={item.instagram}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Camera size={17} /> Ver no Instagram
+              </a>
+            )}
+            </div>
           ) : null}
         </div>
       </div>
@@ -501,12 +480,12 @@ export default function App() {
             navigate("Mural");
           }}
         >
-          <span className="brand-mark">
-            l<span />
-          </span>
-          <span>
-            lara<span>PORTAL DA NOSSA GENTE</span>
-          </span>
+          <img
+            className="brand-logo"
+            src="/brand/logo-green.png"
+            alt={content.company.name}
+          />
+          <span className="brand-tagline">{content.company.tagline}</span>
         </a>
         <div className="nav-label">NOSSO ESPAÇO</div>
         <nav aria-label="Navegação principal">
@@ -534,22 +513,22 @@ export default function App() {
           ))}
         </nav>
         <div className="sidebar-note">
-          <span className="note-icon">
-            <Heart size={21} />
-          </span>
-          <h3>É sobre a gente.</h3>
-          <p>Histórias, ideias e conexões que nos aproximam.</p>
+          <img
+            className="note-seal"
+            src="/brand/gptw-selo.png"
+            alt="Selo Great Place To Work Certificada, Dez/2025 a Dez/2026"
+          />
+          <h3>Um ótimo lugar para trabalhar.</h3>
+          <p>Certificados GPTW pela 2ª vez consecutiva.</p>
           <button
             onClick={() =>
-              setDetail(content.resources.find((r) => r.id === "sobre"))
+              setDetail(posts.find((p) => p.id === "gptw-2026"))
             }
           >
-            Conheça o portal <ArrowUpRight size={15} />
+            Saiba mais <ArrowUpRight size={15} />
           </button>
-          <span className="note-flower">✳</span>
         </div>
         <div className="sidebar-footer">
-          <span className="tiny-logo">l.</span>
           <span>
             {content.company.footer}
             <small>
@@ -598,7 +577,7 @@ export default function App() {
           <div className="page-heading">
             <div>
               <div className="eyebrow">
-                QUE BOM TER VOCÊ POR AQUI <span>✦</span>
+                QUE BOM TER VOCÊ POR AQUI <span>●</span>
               </div>
               <h1>
                 {view === "Mural"
@@ -648,17 +627,47 @@ export default function App() {
                 </span>
                 <h2>{content.hero.title}</h2>
                 <p>{content.hero.description}</p>
-                <button
-                  className="primary-button"
-                  onClick={() => setDetail(heroPost)}
-                >
-                  Conheça o nosso espaço <ArrowRight size={17} />
-                </button>
+                <div className="hero-actions">
+                  <button
+                    className="primary-button"
+                    onClick={() => setDetail(heroPost)}
+                  >
+                    Conheça o portal <ArrowRight size={17} />
+                  </button>
+                  <a
+                    className="ghost-button"
+                    href={content.company.careers}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Briefcase size={16} /> Vagas abertas
+                  </a>
+                </div>
+                <dl className="hero-stats">
+                  {content.stats.map((stat) => (
+                    <div key={stat.label}>
+                      <dt>{stat.value}</dt>
+                      <dd>{stat.label}</dd>
+                    </div>
+                  ))}
+                </dl>
               </div>
-              <HeroArt />
-              <span className="hero-index">
-                <span /> 01 / 01
-              </span>
+              <HeroPhotos />
+              <img
+                className="hero-watermark"
+                src="/brand/logo-white.png"
+                alt=""
+                aria-hidden="true"
+              />
+            </section>
+          )}
+          {view === "Mural" && !query && (
+            <section className="brands-band" aria-label="Nossas marcas">
+              <span>NOSSAS MARCAS</span>
+              <img
+                src="/brand/marcas-green.png"
+                alt="O Boticário, Quem Disse, Berenice?, O.U.I, AU.migos Pets, Eudora e iaf"
+              />
             </section>
           )}
           <div
@@ -889,12 +898,7 @@ export default function App() {
                   <span className="little-stars">✧</span>
                 </div>
                 {content.resources.map((resource) => {
-                  const Icon =
-                    resource.icon === "book"
-                      ? BookOpen
-                      : resource.icon === "folder"
-                        ? FolderOpen
-                        : Heart;
+                  const Icon = resourceIcons[resource.icon] || Heart;
                   const inner = (
                     <>
                       <span className={`resource-icon ${resource.icon}`}>
@@ -928,29 +932,85 @@ export default function App() {
                   );
                 })}
               </section>
+              <section className="panel cities-panel">
+                <div className="panel-title">
+                  <h2>
+                    <MapPin size={18} /> Onde estamos
+                  </h2>
+                </div>
+                <p>Nossa gente está em lojas e na Venda Direta pela Bahia.</p>
+                <ul>
+                  {content.cities.map((city) => (
+                    <li key={city}>{city}</li>
+                  ))}
+                </ul>
+              </section>
+              <section className="panel insta-panel">
+                <div className="panel-title">
+                  <h2>
+                    <Camera size={18} /> No nosso Instagram
+                  </h2>
+                  <a
+                    className="icon-button"
+                    href={content.company.instagram}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Abrir o Instagram do Grupo Lara"
+                  >
+                    <ArrowUpRight size={18} />
+                  </a>
+                </div>
+                <div className="insta-grid">
+                  {content.gallery.map((item) => (
+                    <a
+                      key={item.url + item.image}
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      title={item.alt}
+                    >
+                      <img src={item.image} alt={item.alt} loading="lazy" />
+                    </a>
+                  ))}
+                </div>
+                <a
+                  className="calendar-link"
+                  href={content.company.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Seguir @grupo_lara_ <ArrowRight size={15} />
+                </a>
+              </section>
               <div className="quote-card">
                 <span>“</span>
                 <p>
-                  Grandes coisas são feitas
+                  Há 36 anos
                   <br />
-                  por pessoas que
+                  transformando pessoas e
                   <br />
-                  <em>constroem juntas.</em>
+                  <em>movimentando o varejo.</em>
                 </p>
                 <div>
                   <span /> NOSSA GENTE, NOSSA FORÇA
                 </div>
-                <Sparkles className="quote-sparkle" size={27} />
+                <img
+                  className="quote-logo"
+                  src="/brand/logo-white.png"
+                  alt=""
+                  aria-hidden="true"
+                />
               </div>
             </aside>
           </div>
           <footer className="page-footer">
             <span>
-              Um espaço de todos nós. <Heart size={12} />
+              Grupo Lara · Feito para aproximar a nossa gente{" "}
+              <Heart size={12} />
             </span>
             <span>
               {content.company.demo
-                ? "Conteúdo demonstrativo · Portal Lara"
+                ? "Versão de demonstração · agenda sujeita a confirmação"
                 : `Portal ${content.company.name}`}
             </span>
           </footer>

@@ -1,157 +1,324 @@
 {
   "company": {
-    "name": "Lara",
-    "tagline": "Nosso ponto de encontro",
-    "footer": "Feito para aproximar a nossa gente.",
+    "name": "Grupo Lara",
+    "tagline": "Portal da nossa gente",
+    "footer": "Há 36 anos transformando pessoas e movimentando o varejo.",
+    "instagram": "https://www.instagram.com/grupo_lara_/",
+    "careers": "https://grupolarabahia.vagas.solides.com.br",
     "demo": true
   },
   "hero": {
-    "eyebrow": "JUNTOS, A GENTE VAI MAIS LONGE",
-    "title": "Conexões que fazem\na diferença.",
-    "description": "Um espaço para compartilhar novidades, celebrar conquistas e ficar perto de tudo o que acontece por aqui.",
-    "postId": "cultura-conexao"
+    "eyebrow": "GREAT PLACE TO WORK · 2ª VEZ CONSECUTIVA",
+    "title": "Gente que transforma.\nVarejo que movimenta.",
+    "description": "Há 36 anos o Grupo Lara cresce junto com quem faz parte dele. Aqui você acompanha avisos, campanhas, boas-vindas e tudo o que acontece nas nossas lojas e na Venda Direta.",
+    "postId": "boas-vindas-portal"
   },
+  "stats": [
+    { "value": "36", "label": "anos de história" },
+    { "value": "5", "label": "marcas no nosso time" },
+    { "value": "2×", "label": "certificados GPTW" }
+  ],
+  "cities": [
+    "Ilhéus",
+    "Itacaré",
+    "Itaberaba",
+    "Jequié",
+    "Jeremoabo",
+    "Ribeira do Pombal",
+    "Euclides da Cunha",
+    "Tucano"
+  ],
   "posts": [
+    {
+      "id": "boas-vindas-portal",
+      "category": "Nossa cultura",
+      "title": "Boas-vindas ao Portal Lara",
+      "excerpt": "Um espaço só nosso para ficar por dentro de tudo o que acontece no Grupo Lara.",
+      "body": [
+        "O Grupo Lara reúne O Boticário, Eudora, Quem Disse, Berenice?, O.U.I e AU.migos Pets. São 36 anos transformando pessoas e movimentando o varejo, e essa história é escrita por cada pessoa do nosso time.",
+        "Neste portal você encontra os avisos importantes, as campanhas do mês, a agenda e as boas-vindas a quem está chegando. Use a busca, navegue pelas categorias e salve as publicações para ler depois.",
+        "Tem uma notícia da sua loja ou da sua equipe? Fale com a Comunicação para ela aparecer por aqui."
+      ],
+      "date": "2026-11-09",
+      "author": "Comunicação",
+      "initials": "CO",
+      "readTime": "2 min",
+      "pinned": false
+    },
+    {
+      "id": "venda-direta-em-acao",
+      "category": "Novidades",
+      "title": "Venda Direta nas ruas: nosso time perto dos revendedores",
+      "excerpt": "A equipe de Revendedores Grupo Boticário montou ponto de atendimento e levou a marca para perto da comunidade.",
+      "body": [
+        "Nosso time da Venda Direta saiu às ruas com o ponto de atendimento Revendedores Grupo Boticário, levando informação, produtos e muita energia para perto de quem revende as nossas marcas.",
+        "Ações como essa fortalecem o relacionamento com a rede de revendedores e mostram, na prática, o jeito Lara de atender: com proximidade e alegria.",
+        "Veja mais fotos no nosso Instagram."
+      ],
+      "date": "2026-11-09",
+      "author": "Venda Direta",
+      "initials": "VD",
+      "readTime": "1 min",
+      "image": "/images/instagram/venda-direta-acao.jpg",
+      "imageAlt": "Equipe da Venda Direta reunida ao lado de bandeiras roxas de Revendedores Grupo Boticário",
+      "instagram": "https://www.instagram.com/grupo_lara_/p/DfhWOUeFjls/",
+      "pinned": false
+    },
+    {
+      "id": "corrida-botisun",
+      "category": "Campanhas",
+      "title": "Boti.Sun na linha de chegada",
+      "excerpt": "Presença O Boticário na corrida, com o carrinho Boti.Sun e um time que também foi para a pista.",
+      "body": [
+        "Nossa equipe marcou presença na corrida com o espaço O Boticário e o carrinho da linha Boti.Sun, lembrando a todos que proteção solar também faz parte do treino.",
+        "Teve gente do time que correu, subiu ao pódio da diversão e voltou com medalha no peito. Movimento que inspira dentro e fora das lojas!",
+        "Na etapa Almeida Carneiro, os participantes também receberam kits especiais. Confira os registros no Instagram."
+      ],
+      "date": "2026-11-08",
+      "author": "Marketing",
+      "initials": "MK",
+      "readTime": "2 min",
+      "image": "/images/instagram/corrida-botisun.jpg",
+      "imageAlt": "Equipe com medalhas em frente ao painel O Boticário, ao lado de um carrinho de produtos Boti.Sun",
+      "instagram": "https://www.instagram.com/grupo_lara_/p/Dff3caQBGRe/",
+      "pinned": false
+    },
+    {
+      "id": "integracao-outubro",
+      "category": "Nossa cultura",
+      "title": "Integração de outubro: sejam bem-vindos!",
+      "excerpt": "Oito novos talentos chegaram ao time em lojas, Venda Direta e áreas de apoio. Dê as boas-vindas!",
+      "body": [
+        "A turma da integração de outubro já está com a gente: Ávila (Consultora de Vendas, Ribeira do Pombal), Bianca (Atendente de Venda Direta, Itaberaba), Lavinia (Atendente de Venda Direta, Jeremoabo) e Luanna (Consultora de Vendas, Itacaré).",
+        "Também chegaram Mariana (Atendimento de Venda, Jequié), Maya (Consultora de Vendas, Jequié), Murilo (Analista de Projetos e Inovações, Ilhéus) e Sthefany (Consultora de Vendas, Euclides da Cunha).",
+        "Que essa jornada seja cheia de aprendizado e conquistas. Quando encontrar alguém novo por aí, receba com o carinho que é a nossa marca."
+      ],
+      "date": "2026-11-06",
+      "author": "Gente & Gestão",
+      "initials": "GG",
+      "readTime": "2 min",
+      "image": "/images/instagram/integracao-outubro.jpg",
+      "imageAlt": "Arte Sejam Bem-Vindos com as fotos dos oito novos colaboradores da integração de outubro",
+      "instagram": "https://www.instagram.com/grupo_lara_/p/DfaLMS3FUkl/",
+      "pinned": false
+    },
+    {
+      "id": "boas-vindas-lauro",
+      "category": "Novidades",
+      "title": "Bem-vindo, Lauro Macedo!",
+      "excerpt": "Lauro chega como Supervisor de Promotores de Vendas para somar com a nossa liderança.",
+      "body": [
+        "Damos as boas-vindas a Lauro Macedo, nosso novo Supervisor de Promotores de Vendas.",
+        "Estamos felizes em contar com sua liderança e certos de que, juntos, alcançaremos grandes resultados!"
+      ],
+      "date": "2026-11-03",
+      "author": "Gente & Gestão",
+      "initials": "GG",
+      "readTime": "1 min",
+      "image": "/images/instagram/boas-vindas-lauro.jpg",
+      "imageAlt": "Arte de boas-vindas com foto de Lauro Macedo, Supervisor de Promotores de Vendas",
+      "instagram": "https://www.instagram.com/grupo_lara_/p/DfSYj7OjqSO/",
+      "pinned": false
+    },
     {
       "id": "outubro-rosa",
       "category": "Campanhas",
-      "title": "Outubro Rosa: o cuidado começa com você",
-      "excerpt": "Neste mês, vamos juntos espalhar informação, acolhimento e cuidado. Conheça a nossa programação.",
+      "title": "Outubro Rosa: cuidar é um ato de amor",
+      "excerpt": "Encerramos o mês reforçando a importância da prevenção e do autocuidado. A informação salva vidas.",
       "body": [
-        "Cuidar de quem faz parte da nossa história também é o nosso compromisso. Durante outubro, nosso portal vai abrir espaço para conversas sobre cuidado e bem-estar.",
-        "A programação de exemplo inclui uma roda de conversa em 8 de outubro e um encontro da equipe em 23 de outubro. Confira os detalhes na agenda do portal.",
-        "Vista uma peça rosa no encontro e ajude a tornar esse momento ainda mais especial. Esta é uma campanha demonstrativa: substitua os textos e datas pela programação da sua empresa."
+        "Durante outubro, o Grupo Lara abraçou a campanha Outubro Rosa para falar sobre prevenção e diagnóstico precoce do câncer de mama.",
+        "O cuidado não acaba com o mês: mantenha seus exames em dia e incentive as pessoas ao seu redor a fazerem o mesmo.",
+        "O carrossel completo da campanha está disponível no nosso Instagram."
       ],
-      "date": "2026-09-30",
-      "author": "Gente & Cultura",
-      "initials": "GC",
-      "readTime": "2 min",
-      "image": "/images/campanha-rosa.svg",
-      "imageAlt": "Ilustração de laço rosa com a mensagem Cuidar é um ato de amor",
-      "pinned": true
-    },
-    {
-      "id": "encontro-equipe",
-      "category": "Novidades",
-      "title": "Boas ideias nascem quando a gente se encontra",
-      "excerpt": "Uma pausa na rotina, muitas trocas e um time cheio de ideias. Veja o que vem no nosso próximo encontro.",
-      "body": [
-        "Tem novidade boa chegando! Nosso próximo encontro será um espaço para compartilhar aprendizados, ouvir novas perspectivas e construir os próximos passos em equipe.",
-        "Traga uma ideia, uma pergunta ou uma experiência que possa inspirar outras pessoas. Todo mundo tem algo para somar.",
-        "Consulte o evento Conexão Lara na agenda. Conteúdo de demonstração; ajuste o local e o horário antes de divulgar."
-      ],
-      "date": "2026-09-29",
-      "author": "Comunicação",
-      "initials": "CO",
-      "readTime": "3 min",
-      "image": "/images/equipe.svg",
-      "imageAlt": "Ilustração de uma equipe reunida à mesa para compartilhar ideias",
-      "pinned": false
-    },
-    {
-      "id": "feriado-outubro",
-      "category": "Avisos",
-      "title": "Feriado de outubro: programe-se por aqui",
-      "excerpt": "Confira a orientação para o dia 12 de outubro e organize suas atividades com antecedência.",
-      "body": [
-        "No dia 12 de outubro, teremos o feriado de Nossa Senhora Aparecida. Combine previamente com sua liderança a organização das entregas e os atendimentos da equipe.",
-        "As escalas e os horários devem ser confirmados por cada área. Este aviso é um exemplo e precisa ser adaptado à operação da empresa."
-      ],
-      "date": "2026-09-28",
-      "author": "Gente & Cultura",
-      "initials": "GC",
+      "date": "2026-10-31",
+      "author": "Gente & Gestão",
+      "initials": "GG",
       "readTime": "1 min",
+      "image": "/images/instagram/outubro-rosa.jpg",
+      "imageAlt": "Arte Outubro Rosa com uma mão segurando o laço rosa e a assinatura Grupo Lara",
+      "instagram": "https://www.instagram.com/grupo_lara_/p/DfKZZOolnI4/",
+      "pinned": false
+    },
+    {
+      "id": "vagas-tucano",
+      "category": "Avisos",
+      "title": "Vagas abertas em Tucano: indique quem você conhece",
+      "excerpt": "Estamos contratando Consultor(a) de Negócios e Atendente de Venda Direta. Inscrições pelo portal de vagas.",
+      "body": [
+        "Temos duas oportunidades em Tucano: Consultor(a) de Negócios e Atendente de Venda Direta. A missão é oferecer suporte online aos revendedores e impulsionar os resultados da Venda Direta O Boticário.",
+        "Benefícios: comissão, premiação, seguro de vida, assistência odontológica, telemedicina, Gympass, vale-transporte, auxílio psicológico, descontos em farmácias e desconto exclusivo em produtos O Boticário.",
+        "Conhece alguém que gosta de vendas, atendimento e de construir bons relacionamentos? Compartilhe o link de inscrição: grupolarabahia.vagas.solides.com.br."
+      ],
+      "date": "2026-10-30",
+      "author": "Gente & Gestão",
+      "initials": "GG",
+      "readTime": "2 min",
+      "image": "/images/instagram/vaga-tucano.jpg",
+      "imageAlt": "Arte Temos uma vaga para você, com equipe na loja e a lista de benefícios",
+      "instagram": "https://www.instagram.com/grupo_lara_/p/DfHwd1tFqBI/",
       "pinned": true
     },
     {
-      "id": "cultura-conexao",
+      "id": "gptw-2026",
       "category": "Nossa cultura",
-      "title": "Um novo espaço. A mesma vontade de estar perto.",
-      "excerpt": "O Portal Lara chegou para conectar pessoas, histórias e tudo o que faz parte do nosso dia a dia.",
+      "title": "Orgulho que se renova: somos GPTW pela 2ª vez consecutiva",
+      "excerpt": "O Grupo Lara é certificado Great Place To Work de dezembro de 2025 a dezembro de 2026. Essa conquista é de todo mundo.",
       "body": [
-        "Boas-vindas ao nosso ponto de encontro! Aqui você acompanha avisos importantes, descobre as próximas campanhas e encontra as datas que não podem ficar de fora da sua agenda.",
-        "Explore as categorias, salve publicações para ler depois e volte sempre para conferir as novidades. Os itens salvos ficam apenas no seu navegador.",
-        "Este portal foi pensado para crescer com a nossa história. Os conteúdos iniciais são exemplos para inspirar as primeiras publicações da sua empresa."
+        "Pelo segundo ano seguido, o Grupo Lara recebeu a certificação Great Place To Work, válida de dezembro de 2025 a dezembro de 2026.",
+        "O selo nasce da voz de quem trabalha aqui: é o reconhecimento de um ambiente de confiança, orgulho e colaboração construído por cada pessoa do nosso time.",
+        "Obrigado por fazer do Grupo Lara um ótimo lugar para trabalhar!"
       ],
-      "date": "2026-09-25",
-      "author": "Comunicação",
-      "initials": "CO",
-      "readTime": "2 min",
+      "date": "2025-12-31",
+      "author": "Diretoria",
+      "initials": "GL",
+      "readTime": "1 min",
+      "image": "/images/instagram/gptw-2026.jpg",
+      "imageAlt": "Arte verde Orgulho que se renova com o selo Great Place To Work Certificada e fotos da equipe",
+      "instagram": "https://www.instagram.com/grupo_lara_/p/DS7x74yjXkx/",
+      "pinned": true
+    },
+    {
+      "id": "natal-ilheus",
+      "category": "Campanhas",
+      "title": "Eu ❤ Natal: nosso time em Ilhéus",
+      "excerpt": "A equipe O Boticário Ilhéus celebrou o Natal em frente à Catedral de São Sebastião.",
+      "body": [
+        "O clima de Natal tomou conta do nosso time em Ilhéus, reunido em frente à Catedral de São Sebastião, um dos cartões-postais da cidade.",
+        "Datas especiais são momentos de celebrar as conquistas do ano e a força de quem está na linha de frente das nossas lojas."
+      ],
+      "date": "2025-12-23",
+      "author": "Marketing",
+      "initials": "MK",
+      "readTime": "1 min",
+      "image": "/images/instagram/natal-ilheus.jpg",
+      "imageAlt": "Equipe O Boticário Ilhéus em frente à Catedral de São Sebastião com o letreiro Eu Natal",
+      "instagram": "https://www.instagram.com/grupo_lara_/reel/DSnvDg3CYOA/",
       "pinned": false
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/images/instagram/integracao-outubro.jpg",
+      "alt": "Integração de outubro",
+      "url": "https://www.instagram.com/grupo_lara_/p/DfaLMS3FUkl/"
+    },
+    {
+      "image": "/images/instagram/corrida-kit.jpg",
+      "alt": "Kit da etapa Almeida Carneiro",
+      "url": "https://www.instagram.com/grupo_lara_/reel/DfdRBfMB7tC/"
+    },
+    {
+      "image": "/images/instagram/venda-direta-acao.jpg",
+      "alt": "Venda Direta em ação",
+      "url": "https://www.instagram.com/grupo_lara_/p/DfhWOUeFjls/"
+    },
+    {
+      "image": "/images/instagram/natal-ilheus.jpg",
+      "alt": "Natal em Ilhéus",
+      "url": "https://www.instagram.com/grupo_lara_/reel/DSnvDg3CYOA/"
+    },
+    {
+      "image": "/images/instagram/gptw-2026.jpg",
+      "alt": "GPTW pela 2ª vez",
+      "url": "https://www.instagram.com/grupo_lara_/p/DS7x74yjXkx/"
+    },
+    {
+      "image": "/images/instagram/corrida-botisun.jpg",
+      "alt": "Boti.Sun na corrida",
+      "url": "https://www.instagram.com/grupo_lara_/p/Dff3caQBGRe/"
     }
   ],
   "events": [
     {
-      "id": "cafe-setembro",
-      "title": "Café com a liderança",
-      "date": "2026-09-30",
-      "time": "15:00",
-      "endTime": "16:00",
-      "location": "Espaço de convivência",
-      "category": "Encontro",
-      "description": "Uma conversa aberta sobre as novidades e os próximos passos da equipe. Evento de exemplo."
-    },
-    {
-      "id": "roda-outubro",
-      "title": "Roda de conversa · Outubro Rosa",
-      "date": "2026-10-08",
-      "time": "14:00",
-      "endTime": "15:00",
-      "location": "Sala de encontros",
-      "category": "Campanha",
-      "description": "Um momento de troca, acolhimento e cuidado entre colegas. Evento de exemplo."
-    },
-    {
-      "id": "feriado-12",
-      "title": "Nossa Senhora Aparecida",
-      "date": "2026-10-12",
+      "id": "proclamacao-republica",
+      "title": "Proclamação da República",
+      "date": "2026-11-15",
       "time": "",
       "location": "Feriado nacional",
       "category": "Feriado",
-      "description": "Confira com a sua liderança a escala de funcionamento."
+      "description": "Feriado nacional. Confira com a sua liderança a escala e o horário de funcionamento da sua loja."
     },
     {
-      "id": "conexao-lara",
-      "title": "Conexão Lara",
-      "date": "2026-10-23",
-      "time": "09:00",
-      "endTime": "10:30",
-      "location": "Espaço de convivência",
-      "category": "Encontro",
-      "description": "Nosso encontro para compartilhar ideias e celebrar conquistas. Evento de exemplo."
+      "id": "consciencia-negra",
+      "title": "Dia Nacional de Zumbi e da Consciência Negra",
+      "date": "2026-11-20",
+      "time": "",
+      "location": "Feriado nacional",
+      "category": "Feriado",
+      "description": "Feriado nacional. Confira com a sua liderança a escala e o horário de funcionamento da sua loja."
+    },
+    {
+      "id": "black-friday",
+      "title": "Black Friday",
+      "date": "2026-11-27",
+      "time": "",
+      "location": "Lojas e Venda Direta",
+      "category": "Campanha",
+      "description": "Uma das datas mais fortes do varejo. Fique atento às orientações da sua liderança sobre ofertas, metas e escalas."
+    },
+    {
+      "id": "vespera-natal",
+      "title": "Véspera de Natal",
+      "date": "2026-12-24",
+      "time": "",
+      "location": "Lojas",
+      "category": "Campanha",
+      "description": "Reta final da campanha de Natal. Horários especiais de funcionamento serão informados por cada loja."
+    },
+    {
+      "id": "natal",
+      "title": "Natal",
+      "date": "2026-12-25",
+      "time": "",
+      "location": "Feriado nacional",
+      "category": "Feriado",
+      "description": "Feriado nacional. Confira com a sua liderança a escala de funcionamento."
+    },
+    {
+      "id": "confraternizacao",
+      "title": "Confraternização Universal",
+      "date": "2027-01-01",
+      "time": "",
+      "location": "Feriado nacional",
+      "category": "Feriado",
+      "description": "Feriado nacional. Feliz Ano-Novo para toda a nossa gente!"
     }
   ],
   "resources": [
+    {
+      "id": "vagas",
+      "title": "Vagas e indicações",
+      "description": "Portal de vagas do Grupo Lara",
+      "icon": "briefcase",
+      "url": "https://grupolarabahia.vagas.solides.com.br"
+    },
+    {
+      "id": "quem-somos",
+      "title": "Quem somos",
+      "description": "Nossa história e nossas marcas",
+      "icon": "heart",
+      "body": [
+        "O Grupo Lara está há 36 anos transformando pessoas e movimentando o varejo.",
+        "Somos O Boticário, Eudora, Quem Disse, Berenice?, O.U.I e AU.migos Pets, com lojas e operações de Venda Direta em cidades da Bahia como Ilhéus, Itacaré, Itaberaba, Jequié, Jeremoabo, Ribeira do Pombal, Euclides da Cunha e Tucano.",
+        "Somos certificados Great Place To Work pela 2ª vez consecutiva (Dez/2025 – Dez/2026), uma conquista construída por toda a nossa gente."
+      ]
+    },
     {
       "id": "guia",
       "title": "Guia de boas-vindas",
       "description": "Para começar com o pé direito",
       "icon": "book",
       "body": [
-        "Que bom ter você por aqui! Este é um espaço de exemplo para o guia de boas-vindas da empresa.",
-        "Inclua aqui a apresentação das áreas, os canais de contato e as informações úteis para os primeiros dias. Você também pode substituir este conteúdo por um link para um PDF, usando o campo url no arquivo de conteúdo."
+        "Que bom ter você no Grupo Lara! Este espaço vai reunir o guia de boas-vindas com a apresentação das áreas, os canais de contato e as informações úteis para os primeiros dias.",
+        "Enquanto o guia completo não é publicado, procure a sua liderança ou a equipe de Gente & Gestão para tirar dúvidas."
       ]
     },
     {
-      "id": "materiais",
-      "title": "Materiais e documentos",
-      "description": "Tudo à mão, em um só lugar",
-      "icon": "folder",
-      "body": [
-        "Reúna os materiais que a equipe consulta no dia a dia.",
-        "Para disponibilizar um documento, coloque o PDF na pasta public/documentos e cadastre seu caminho no campo url de um recurso. Exemplo: /documentos/manual.pdf."
-      ]
-    },
-    {
-      "id": "sobre",
-      "title": "Conheça o nosso portal",
-      "description": "Um espaço feito para você",
-      "icon": "heart",
-      "body": [
-        "O Portal Lara reúne comunicados, campanhas, histórias e eventos em um único lugar.",
-        "Use a busca para encontrar uma publicação ou navegue pelas categorias. O ícone de marcador guarda uma publicação nos seus salvos, somente neste navegador.",
-        "As publicações e os eventos desta primeira versão são demonstrativos."
-      ]
+      "id": "instagram",
+      "title": "@grupo_lara_",
+      "description": "Siga o Grupo Lara no Instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/grupo_lara_/"
     }
   ]
 }

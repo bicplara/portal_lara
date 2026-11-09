@@ -1,6 +1,6 @@
-# Portal Lara
+# Portal Lara · Grupo Lara
 
-Portal corporativo estático em React + Vite: mural de publicações, avisos, campanhas, busca, calendário navegável, exportação de eventos (.ics), links úteis e leituras salvas no navegador. Sem backend, banco de dados ou autenticação.
+Portal interno do Grupo Lara (O Boticário, Eudora, Quem Disse, Berenice?, O.U.I e AU.migos Pets). Portal estático em React + Vite: mural de publicações, avisos, campanhas, busca, calendário navegável, exportação de eventos (.ics), links úteis e leituras salvas no navegador. Sem backend, banco de dados ou autenticação.
 
 ## Rodar no computador
 
@@ -81,7 +81,7 @@ Os horários usam o fuso de Brasília (`America/Sao_Paulo`). Para um evento de d
 
 ### Atalhos e documentos
 
-Na lista `resources`, use `body` para abrir um texto no portal ou `url` para abrir um documento/link. Exemplo de recurso com PDF:
+Na lista `resources`, use `body` para abrir um texto no portal ou `url` para abrir um documento/link (ex.: o portal de vagas). Exemplo de recurso com PDF:
 
 ```json
 {
@@ -93,15 +93,17 @@ Na lista `resources`, use `body` para abrir um texto no portal ou `url` para abr
 }
 ```
 
-Nesse caso, coloque o PDF em `public/documentos/manual.pdf`. Links externos devem começar com `https://`. Ícones disponíveis: `book`, `folder`, `heart`.
+Nesse caso, coloque o PDF em `public/documentos/manual.pdf`. Links externos devem começar com `https://`. Ícones disponíveis: `book`, `folder`, `heart`, `briefcase`, `instagram`.
 
 ### Identidade e destaque principal
 
-- `company.name` e `company.footer`: nome e assinatura do portal.
-- `company.demo`: mantenha `true` enquanto houver conteúdo de exemplo; mude para `false` após substituí-lo.
+- Paleta oficial (em `src/styles.css`, bloco "Identidade Grupo Lara"): verde Lara `#017C5D`, verde profundo `#0A3F34`, verde vivo `#2DBE5C` e dourado `#F2B21B`.
+- Logotipos em `public/brand/`: `logo-green.png` (fundo claro), `logo-white.png` (fundo escuro), `marcas-green.png`/`marcas-white.png` (faixa de marcas) e `gptw-selo.png`.
+- Fotos das publicações em `public/images/instagram/`, retiradas do Instagram @grupo_lara_. Cada publicação pode ter o campo opcional `"instagram": "https://..."`, que mostra o botão "Ver no Instagram".
+- `company`: nome, assinatura, link do Instagram (`instagram`) e do portal de vagas (`careers`).
+- `company.demo`: mantenha `true` enquanto a agenda e os textos não forem confirmados; mude para `false` depois.
 - `hero`: chamada principal. `postId` deve corresponder ao `id` da publicação aberta pelo botão.
-- `src/styles.css`: cores, fontes e estilos responsivos.
-- `src/App.jsx`: componentes, marca visual e interações. O logotipo inicial usa o nome Lara; ajuste também o título em `index.html` e o favicon ao mudar a marca.
+- `stats`: números exibidos no destaque principal. `cities`: cidades do painel "Onde estamos". `gallery`: fotos do painel "No nosso Instagram" (`image`, `alt`, `url`).
 
 ## Publicar na Vercel
 
